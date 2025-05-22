@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Makes page responsive -->
+
+    <title>Contact Us</title>
+    <!-- Page title shown in the browser tab -->
+
+    <style>
+      /* body styling */
+
+      body {
+        font-family: Arial, sans-serif;
+
+        max-width: 1200px;
+
+        margin: 0 auto;
+
+        padding: 0;
+
+        line-height: 1.6;
+      }
+
+      /* Main heading style */
+
+      h1 {
+        text-align: center;
+
+        color: white;
+
+        text-shadow: 5px 5px rgb(35, 101, 182);
+      }
+
+      /* Paragraph text style */
+
+      p {
+        color: white;
+      }
+
+      /* Contact form wrapper */
+
+      .contact-form {
+        margin-top: 30px;
+      }
+
+      /* Wrapper for individual form fields */
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      /* Label styling for form fields */
+
+      label {
+        display: block;
+
+        margin-bottom: 5px;
+
+        color: white;
+      }
+
+      /* Inputs and textarea style */
+
+      input,
+      textarea {
+        width: 100%;
+
+        padding: 8px;
+
+        border: 1px solid #ddd;
+      }
+
+      /* Specific style for message box */
+
+      textarea {
+        height: 100px;
+      }
+
+      /* Submit button styling */
+
+      button {
+        background: #333;
+
+        color: white;
+
+        border: none;
+
+        padding: 10px 20px;
+
+        cursor: pointer;
+      }
+
+      /* Navigation bar styling */
+
+      .navbar {
+        display: flex;
+
+        justify-content: center;
+
+        background-color: #273353;
+
+        padding: 10px 0;
+
+        position: sticky;
+
+        top: 0;
+
+        width: 100%;
+
+        z-index: 999; /* Makes sure navbar stays on top */
+      }
+
+      /* Nav list styling */
+
+      .navbar ul {
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        list-style: none;
+
+        margin: 0;
+
+        padding: 0;
+
+        width: 100%;
+
+        max-width: 1200px;
+      }
+
+      /* Individual nav items */
+
+      .navbar li {
+        display: inline-block;
+      }
+
+      /* Nav link styling */
+
+      .navbar a {
+        color: white;
+
+        text-decoration: none;
+
+        padding: 15px 20px;
+
+        display: flex;
+
+        align-items: center;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        height: 100%;
+      }
+
+      /* Hover effect for nav links */
+
+      .navbar a:hover {
+        background-color: hsl(198, 74%, 26%);
+      }
+
+      /* Image alignment inside navbar */
+
+      .navbar img {
+        vertical-align: middle;
+      }
+
+      /* Layout for contact information section */
+
+      .contact-info {
+        display: flex;
+
+        justify-content: space-around;
+
+        margin: 30px 0;
+
+        flex-wrap: wrap;
+      }
+
+      /* Individual contact methods (email, phone, address) */
+
+      .contact-method {
+        text-align: center;
+
+        padding: 20px;
+
+        background: #f5f5f5;
+
+        border-radius: 5px;
+
+        margin: 10px;
+
+        flex: 1;
+
+        min-width: 250px;
+      }
+
+      /* Contact method headers */
+
+      .contact-method h3 {
+        margin-top: 0;
+
+        color: #273353;
+      }
+
+      /* Container for main content */
+
+      .container {
+        max-width: 1200px;
+
+        margin: 0 auto;
+
+        padding: 20px;
+      }
+
+      /* Main section background and spacing */
+
+      main {
+        background-image: linear-gradient(
+          to bottom,
+          rgb(78, 142, 163),
+          rgb(41, 41, 133)
+        );
+
+        margin-top: 0;
+      }
+
+      /* Header spacing */
+
+      header {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Site header with navigation -->
+
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index3.html">About Us</a></li>
+
+          <li>
+            <a href="index.html">
+              <img
+                src="https://www.crwflags.com/fotw/images/c/ca_trty1a.gif"
+                alt="Treaty One Nation Flag"
+                width="100px"
+                height="50px"
+              />
+            </a>
+          </li>
+
+          <li><a href="index2.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main content area -->
+
+    <main>
+      <div class="container">
+        <h1 tabindex="1">Contact Us</h1>
+        <!-- Accessible heading -->
+
+        <p tabindex="2">
+          Have questions? Send us a message and we'll get back to you soon.
+        </p>
+
+        <!-- Contact info display -->
+
+        <div class="contact-info">
+          <div class="contact-method">
+            <h3 tabindex="3">Email Us</h3>
+
+            <h4 tabindex="4">Naawioodena@gmail.com</h4>
+          </div>
+
+          <div class="contact-method">
+            <h3 tabindex="5">Call Us</h3>
+
+            <h4 tabindex="6">+1 (204) 555-0192</h4>
+          </div>
+
+          <div class="contact-method">
+            <h3 tabindex="6">Visit Us</h3>
+
+            <h4 tabindex="6">Grant Ave Winnipeg, Manitoba, Canada</h4>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+
+            <input type="text" id="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+
+            <input type="email" id="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+
+            <textarea id="message" required></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

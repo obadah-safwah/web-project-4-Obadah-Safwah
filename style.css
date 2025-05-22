@@ -1,0 +1,393 @@
+/* 
+
+Color & Theme Explanation: 
+
+ 
+
+Chose to use blues as the colors of my website because blue 
+
+represents trust, peace, and depth, which are important values  
+
+in the discussion of Treaty 1 and the history of the land.  
+
+Blue is also representative of the sky and water—elements  
+
+in nature that hold deep cultural and spiritual importance 
+
+for many Indigenous peoples. 
+
+ 
+
+I selected a monochromatic color scheme because it keeps the website 
+
+visually cohesive and clean. Different shades of blue help to create  
+
+a soothing and reverent mood, making the site inviting and grounded.  
+
+Blue can also promote contemplation, which is appropriate for the  
+
+website's function of visitors learning and connecting with the  
+
+meaning of Naawi-Oodena. 
+
+*/
+
+/* ====== Default Page Styles ====== */
+
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Clean, readable font for body text */
+
+  line-height: 1.6; /* Improves readability with consistent vertical spacing */
+
+  margin: 0px auto; /* Center page content horizontally */
+
+  padding: 20px; /* Adds spacing around main content */
+
+  max-width: 1200px; /* Prevents the site from stretching too wide */
+
+  word-spacing: 2px; /* Increases spacing between words for readability */
+
+  letter-spacing: 0.03em; /* Adds subtle spacing between letters */
+}
+
+a {
+  color: lightgray; /* Keeps links visible but not distracting */
+
+  text-decoration: none; /* Removes default underline for cleaner look */
+}
+
+img {
+  max-width: 100%; /* Ensures images scale down on small screens */
+
+  height: auto; /* Keeps image proportions */
+
+  margin: 20px 0;
+
+  padding: 5px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Adds soft border for clarity */
+}
+
+/* ====== Typography Hierarchy ====== */
+
+/* Typography supports hierarchy and flow: H1 for titles, H2 for subtopics, etc. */
+
+h1 {
+  font-size: 40px; /* Large size for top-level headings */
+
+  text-align: center;
+
+  color: white;
+
+  text-shadow: 6px 6px rgb(35, 101, 182); /* Shadow adds depth, fits blue theme */
+
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 32px;
+
+  color: white;
+
+  text-shadow: 5px 5px rgb(35, 69, 182); /* Slightly darker for contrast */
+
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 24px;
+
+  color: white;
+
+  line-height: 1.4;
+}
+
+p {
+  font-size: 18px;
+
+  color: white;
+
+  line-height: 1.6;
+
+  word-spacing: 0.1em;
+}
+
+.navbar a {
+  font-size: 19px;
+
+  transition: all 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+/* ====== Header and Navigation ====== */
+
+header {
+  background-color: #273353; /* Deep navy blue */
+}
+
+.navbar {
+  display: flex;
+
+  justify-content: center;
+
+  background-color: #273353;
+
+  padding: 10px 0px;
+
+  position: sticky;
+
+  top: 0px; /* Keeps navbar fixed at top during scroll */
+
+  width: 100%;
+
+  z-index: 999; /* Makes sure navbar stays on top */
+}
+
+.navbar ul {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  list-style: none; /* Removes bullet points */
+
+  margin: 0px;
+
+  padding: 0px;
+
+  color: white;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar a {
+  color: white;
+
+  padding: 15px 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  height: 100%;
+
+  transition: background-color 300ms ease;
+}
+
+.navbar a:hover {
+  background-color: hsl(198, 74%, 26%); /* Changes to a lighter blue on hover */
+}
+
+/* ====== Main Content Area ====== */
+
+main {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(78, 142, 163),
+    rgb(41, 41, 133)
+  );
+}
+
+.container {
+  max-width: 1200px;
+
+  margin: 20px auto;
+
+  padding: 20px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.main-content {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 20px; /* Adds spacing between text and image columns */
+}
+
+.text-container {
+  max-width: 60%; /* Makes reading text easier */
+}
+
+.image-container {
+  max-width: 40%;
+
+  text-align: center;
+}
+
+.image-container img {
+  border-radius: 8px; /* Softens image corners */
+
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth to the image */
+}
+
+/* ====== Contact Page Styles ====== */
+
+.contact-info {
+  display: flex;
+
+  justify-content: space-around;
+
+  margin: 30px 0px;
+
+  flex-wrap: wrap; /* Allows layout to stack on smaller screens */
+}
+
+.contact-method {
+  text-align: center;
+
+  padding: 20px;
+
+  background: #f5f5f5;
+
+  border-radius: 5px;
+
+  margin: 10px;
+
+  flex: 1;
+
+  min-width: 250px; /* Ensures each box has space */
+}
+
+.contact-method h3 {
+  margin-top: 0px;
+
+  color: #273353; /* Matches site’s dark blue */
+}
+
+.contact-method p {
+  color: #333;
+}
+
+.contact-form {
+  margin-top: 30px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%; /* Ensures fields stretch full width */
+
+  padding: 8px;
+
+  border: 1px solid #ddd;
+
+  font-size: 16px;
+}
+
+textarea {
+  height: 100px;
+}
+
+/* White list text for dark background */
+
+li {
+  color: white;
+
+  line-height: 1.6;
+}
+
+/* ====== Button Styling ====== */
+
+button {
+  background: #333;
+
+  color: white;
+
+  border: none;
+
+  padding: 10px 20px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+
+  transition: transform 200ms ease;
+}
+
+button:hover {
+  transform: scale(1.05); /* Grows slightly on hover for interaction feedback */
+}
+
+/* ====== About Page Styles ====== */
+
+.about-content {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+
+  margin: 30px 0px;
+}
+
+.feature-list {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Transparent white for gentle contrast */
+
+  padding: 20px;
+
+  border-radius: 8px;
+
+  margin: 20px 0px;
+}
+
+.feature-list h3 {
+  margin-top: 0px;
+}
+
+.feature-list ul {
+  padding-left: 20px;
+}
+
+.feature-list li {
+  margin-bottom: 10px;
+}
+
+/* ====== Responsive Design ====== */
+
+@media (max-width: 768px) {
+  .main-content,
+  .about-content {
+    flex-direction: column; /* Stack content on small screens */
+  }
+
+  .text-container,
+  .image-container {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+}
+
+/* ====== Footer ====== */
+
+footer {
+  background-color: #273353; /* Consistent footer color to match header */
+}
